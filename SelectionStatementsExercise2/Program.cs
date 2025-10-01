@@ -9,13 +9,13 @@
             FavoriteSchoolSubject(schoolSubject);
         }
 
-        static string FavoriteSchoolSubject(string schoolSubject)
+        static void FavoriteSchoolSubject(string schoolSubject)
         {
             switch (schoolSubject.ToLower())
             {
                 case "math":
                     case "mathematics":
-                    Console.WriteLine("Go Green! Pure Mathematics was my major during my time at MSU!")
+                        Console.WriteLine("Go Green! Pure Mathematics was my major during my time at MSU!");
                     break;
                 case "science":
                     Console.WriteLine("I dabbled in chemistry.");
@@ -33,7 +33,7 @@
                     Console.WriteLine("Some regret skipping PE. I regret skipping PE enrollment.");
                     break;
                 default:
-                    Console.ReadLine("Interesting String")
+                    Console.WriteLine("Interesting String");
                     break;
             }
         }
